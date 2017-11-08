@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     watch = require('gulp-watch');
 
 gulp.task('less', function(){
-    return gulp.src('bundles/less/**/*.less')
+    return gulp.src('bundles/**/*.less')
         .pipe(less())
         .pipe(concat('styles.min.css'))
         .pipe(cssmin())
@@ -15,18 +15,18 @@ gulp.task('less', function(){
 });
 
 gulp.task('js', function() {
-    gulp.src('bundles/js/**/*.js')
+    gulp.src('bundles/**/*.js')
         .pipe(concat('scripts.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('js'))
 });
 
 gulp.task('watchless', function(){
-    gulp.watch('bundles/less/**/*.less', ['less']);
+    gulp.watch('bundles/**/*.less', ['less']);
 })
 
 gulp.task('watchjs', function(){
-    gulp.watch('bundles/js/**/*.js', ['js']);
+    gulp.watch('bundles/**/*.js', ['js']);
 })
 
 gulp.task('build', function (callback) {
