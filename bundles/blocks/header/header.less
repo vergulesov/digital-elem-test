@@ -1,0 +1,25 @@
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  min-height: 80px;
+  text-transform: uppercase;
+  margin: 0;
+  &__link {
+    font-size: 1em;
+    line-height: 20px;
+    font-weight: 600;
+    color: #736458;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 25px;
+    &_active {
+      color: #ffffff;
+      background-color: #4d443f;
+    }
+  }
+  &__logo {
+    max-width: 130px;
+  }
+}
