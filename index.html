@@ -14,17 +14,17 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 <body>
-<img class="background-img" src="img/main-background.png">
+<!--<img class="background-img" src="img/main-background.png">-->
     <div class="container main">
         <div class="logo-container">
             <img src="img/logo.png" class="main__logo">
         </div>
         <div class="menu-container">
             <ul class="menu">
-                <li class="menu__item"><a class="menu__link" href="#">about us</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">products</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">contacts</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">feedback</a></li>
+                <li class="menu__item"><a class="menu__link href_about" href="#" data-title="AUUUU">about us</a></li>
+                <li class="menu__item"><a class="menu__link href_products" href="#">products</a></li>
+                <li class="menu__item"><a class="menu__link href_contacts" href="#">contacts</a></li>
+                <li class="menu__item"><a class="menu__link href_feedback" href="#">feedback</a></li>
             </ul>
         </div>
         <div class="inner-container">
@@ -181,7 +181,9 @@
                 </p>
                 <div class="_border"></div>
                 <p class="modal__text modal__text_brown">
-                    Material: Silver 925 ‘gold plating 999.9’, precious and semi—precious stones (diamonds, rubies, emeralds), steel – Damascus.
+                    Material: Silver 925 ‘gold plating 999.9’, precious and
+                    <br>semi—precious stones (diamonds, rubies, emeralds),
+                    <br>steel – Damascus.
                 </p>
             </div>
             <div class="modal-window__column modal-window__column_wide">
@@ -298,12 +300,40 @@
             <li class="header__item"><a class="header__link" href="#">contacts</a></li>
             <li class="header__item"><a class="header__link header__link_active" href="#">feedback</a></li>
         </ul>
-        <img class="feedback__img">
-        <p class="feedback__text">For any doubt or question don’t hesitate in filling up our form and we will contact youas soon as possible.</p>
-        <input type="text" class="feedback__input" placeholder="Enter your name"><br>
-        <input type="email" class="feedback__input" placeholder="Enter you e-mail"><br>
-        <textarea class="feedback__textarea" placeholder="Write your message here"></textarea><br>
-        <input type="submit" class="feedback__submit">
+        <div class="form-container form-container_form">
+            <img class="form-container__img" src="img/knife_logo.png">
+            <form class="inner-container inner-container_feedback">
+                <img class="feedback__img">
+                <p class="feedback__text">For any doubt or question don’t hesitate in filling up<br> our form and we will contact you <br> as soon as possible.</p>
+                <div class="tooltip">
+                    <input type="text" class="feedback__input feedback__name" placeholder="Enter your name">
+                    <span class="tooltip__text">Please fill the field.</span>
+                </div>
+                <div class="tooltip">
+                    <input type="email" class="feedback__input feedback__email" placeholder="Enter you e-mail" data-title="Please fill the field">
+                    <span class="tooltip__text">Please fill the field.</span>
+                </div>
+                <div class="tooltip">
+                    <textarea class="feedback__input feedback__input_textarea" placeholder="Write your message here" data-title="Please fill the field"></textarea>
+                    <span class="tooltip__text">Please fill the field.</span>
+                </div>
+                <div class="inner-container_left">
+                    <input type="button" class="feedback__submit" value="send">
+                </div>
+            </form>
+        </div>
+        <div class="form-container form-container_result">
+            <img class="form-container__img" src="img/knife_logo.png">
+            <form class="inner-container inner-container_feedback">
+                <p class="feedback__text">
+                    Thank you for contacting us!<br>
+                    Rest assured, we will reply you soon.
+                </p>
+                <p class="feedback__text feedback__text_dotted">
+                    Have another question?
+                </p>
+            </form>
+        </div>
     </div>
 </body>
 </html>

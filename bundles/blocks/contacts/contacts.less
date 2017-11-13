@@ -1,19 +1,20 @@
 @text-brown: #716256;
 .contacts {
   background-color: rgba(13, 13, 17, 0.8);
-  &:before {
-    content: ' ';
-    display: block;
+  background-color: #141213;
+  background-image:
+          url("../img/catalog/sword_contacts.png");
+  background-repeat: no-repeat;
+  background-position: 100% 70%;
+  background-size: 22%;
+  background-blend-mode: lighten;
+  &__background {
     position: absolute;
-    left: 0;
-    top: 80px;
-    width: 100%;
-    height: calc(~"100% - 80px");
-    z-index: 1;
-    opacity: 0.8;
-
-    background: url("../img/catalog/sword_contacts.png") no-repeat 100% 70%;
-    background-size: 22%;
+    right: 0;
+    top: 50%;
+    width: 20%;
+    transform: translate(0, -50%);
+    box-shadow: inset 4px 4px 10px 10px #0E0E12;
   }
   &__heading {
     color: white;
