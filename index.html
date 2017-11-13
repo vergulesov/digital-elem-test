@@ -5,8 +5,11 @@
     <title>Lamar Artworks</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/scripts.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
@@ -43,25 +46,264 @@
         <div class="inner-container">
             <p class="main__promo">Premium class production absorbed the charm and the wisdom of the Eastern culture.</p>
             <div class="_border"></div>
-            <p class="main__note about__note"><span class="_white">LAMAR</span> — gifts and accessories for those who desire for the luxury and admire for the beauty.<br>
+            <p class="main__note main__note_about"><span class="_white">LAMAR</span> — gifts and accessories for those who desire for the luxury and admire for the beauty.<br>
                 High quality of each item emphasizes its exclusivity, as well as the status of its owner talks about his uniqueness.</p>
             <div class="_border _border_short"></div>
-            <p class="main__note about__note">In <span class="_white">LAMAR</span>, each product has no analogues in the world. All of them are defined as the masterpieces which carry the oriental traditions of the past. An exclusive dinnerware, swords, daggers, the chess — all of these are made of noble metals, exclusive wood species and gems.
+            <p class="main__note main__note_about">In <span class="_white">LAMAR</span>, each product has no analogues in the world. All of them are defined as the masterpieces which carry the oriental traditions of the past. An exclusive dinnerware, swords, daggers, the chess — all of these are made of noble metals, exclusive wood species and gems.
             </p>
             <div style="height: 10px"></div>
-            <p class="main__note about__note">
+            <p class="main__note main__note_about">
                 <span class="_white">LAMAR</span> — “deluxe” gifts for your business partner, friend or family member. Every detail, from the material to the concrete size, is personally discussed with the client. The reason why we do it – because the East — is primarily a subtlety of mind and every little thing always carries deeper meaning than it seems.
             </p>
             <div class="_border _border_short"></div>
-            <p class="main__note about__note">
+            <p class="main__note main__note_about">
                 This is why our customers are willing to pay for the excellent quality and unique design commensurate with the price of the premium class production.
             </p>
             <div class="_border"></div>
         </div>
         <a class="next-page" href="#"><img src="img/arrow_down.png"></a>
     </div>
-    <div class="container">3</div>
-    <div class="container">4</div>
-    <div class="container">5</div>
+    <div class="container products">
+        <ul class="header">
+            <li class="header__item"><img class="header__logo" src="img/logo.png"></li>
+            <li class="header__item"><a class="header__link" href="#">about us</a></li>
+            <li class="header__item"><a class="header__link header__link_active" href="#">products</a></li>
+            <li class="header__item"><a class="header__link" href="#">contacts</a></li>
+            <li class="header__item"><a class="header__link" href="#">feedback</a></li>
+        </ul>
+        <div class="catalog">
+            <div class="catalog__column">
+                <div class="catalog__item catalog__item_long">
+                    <img class="catalog__img" src="img/catalog/sabre.png">
+                    <div class="catalog__overlay"></div>
+                    <h1 class="catalog__name catalog__name_high">sabre</h1>
+                    <div class="catalog__line catalog__line_high"></div>
+                    <p class="catalog__text">
+                        Knives — handmade work made of Damascus steel, precious metals and other expensive materials. The handles of the knives, as well as the blade, are armourers' andmade, which makes the product exclusive itself.
+                    </p>
+                    <div class="catalog__line catalog__line_high"></div>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__img" src="img/catalog/cup.png">
+                    <div class="catalog__overlay"></div>
+                    <h1 class="catalog__name">CUP</h1>
+                    <div class="catalog__line"></div>
+                    <p class="catalog__text">
+                        Knives — handmade work made of Damascus steel, precious metals and other expensive materials. The handles of the knives, as well as the blade, are armourers' andmade, which makes the product exclusive itself.
+                    </p>
+                    <div class="catalog__line"></div>
+                </div>
+            </div>
+            <div class="catalog__column catalog__column_wide">
+                <div class="catalog__item catalog__item_wide">
+                    <img class="catalog__img" src="img/catalog/dirk.png">
+                    <div class="catalog__overlay"></div>
+                    <h1 class="catalog__name">dirk</h1>
+                    <div class="catalog__line"></div>
+                    <p class="catalog__text">
+                        Knives — handmade work made of Damascus steel, precious metals and other expensive materials. The handles of the knives, as well as the blade, are armourers' andmade, which makes the product exclusive itself.
+                    </p>
+                    <div class="catalog__line"></div>
+                </div>
+                <div class="catalog__item catalog__item_short">
+                    <img class="catalog__img" src="img/catalog/knife.png">
+                    <div class="catalog__overlay"></div>
+                    <h1 class="catalog__name">knife</h1>
+                    <div class="catalog__line"></div>
+                    <p class="catalog__text">
+                        Knives — handmade work made of Damascus steel, precious metals and other expensive materials. The handles of the knives, as well as the blade, are armourers' andmade, which makes the product exclusive itself.
+                    </p>
+                    <div class="catalog__line"></div>
+                </div>
+                <div class="catalog__item catalog__item_short">
+                    <img class="catalog__img" src="img/catalog/katana.png">
+                    <div class="catalog__overlay"></div>
+                    <h1 class="catalog__name">katana</h1>
+                    <div class="catalog__line"></div>
+                    <p class="catalog__text">
+                        Knives — handmade work made of Damascus steel, precious metals and other expensive materials. The handles of the knives, as well as the blade, are armourers' andmade, which makes the product exclusive itself.
+                    </p>
+                    <div class="catalog__line"></div>
+                </div>
+                <div class="catalog__item catalog__item_short">
+                    <img class="catalog__img" src="img/catalog/chess.png">
+                    <div class="catalog__overlay"></div>
+                    <h1 class="catalog__name">chess</h1>
+                    <div class="catalog__line"></div>
+                    <p class="catalog__text">
+                        Knives — handmade work made of Damascus steel, precious metals and other expensive materials. The handles of the knives, as well as the blade, are armourers' andmade, which makes the product exclusive itself.
+                    </p>
+                    <div class="catalog__line"></div>
+                </div>
+                <div class="catalog__item catalog__item_short">
+                    <img class="catalog__img" src="img/catalog/dinnerware.png">
+                    <div class="catalog__overlay"></div>
+                    <h1 class="catalog__name">dinnerware</h1>
+                    <div class="catalog__line"></div>
+                    <p class="catalog__text">
+                        Knives — handmade work made of Damascus steel, precious metals and other expensive materials. The handles of the knives, as well as the blade, are armourers' andmade, which makes the product exclusive itself.
+                    </p>
+                    <div class="catalog__line"></div>
+                </div>
+            </div>
+            <div class="catalog__column">
+                <div class="catalog__item">
+                    <img class="catalog__img" src="img/catalog/stick.png">
+                    <div class="catalog__overlay"></div>
+                    <h1 class="catalog__name">walking stick</h1>
+                    <div class="catalog__line"></div>
+                    <p class="catalog__text">
+                        Knives — handmade work made of Damascus steel, precious metals and other expensive materials. The handles of the knives, as well as the blade, are armourers' andmade, which makes the product exclusive itself.
+                    </p>
+                    <div class="catalog__line"></div>
+                </div>
+                <div class="catalog__item catalog__item_long">
+                    <img class="catalog__img" src="img/catalog/book.png">
+                    <div class="catalog__overlay"></div>
+                    <h1 class="catalog__name catalog__name_high">Accessories</h1>
+                    <div class="catalog__line catalog__line_high"></div>
+                    <p class="catalog__text">
+                        Knives — handmade work made of Damascus steel, precious metals and other expensive materials. The handles of the knives, as well as the blade, are armourers' andmade, which makes the product exclusive itself.
+                    </p>
+                    <div class="catalog__line catalog__line_high"></div>
+                </div>
+            </div>
+        </div>
+        <a class="next-page" href="#"><img src="img/arrow_down.png"></a>
+        <div class="modal-window">
+            <div class="modal-window__column">
+                <img class="modal__cross" src="img/cross.png">
+                <img class="modal__img" src="img/knife_logo.png">
+                <h2 class="modal__heading">knife</h2>
+                <div class="_border"></div>
+                <p class="modal__text">
+                    Knives — handmade work made of Damascus steel, precious metals and other expensive materials. The handles of the knives, as well as the blade, are armourers' andmade, which makes the product exclusive itself.
+                </p>
+                <div class="_border"></div>
+                <p class="modal__text modal__text_brown">
+                    Material: Silver 925 ‘gold plating 999.9’, precious and semi—precious stones (diamonds, rubies, emeralds), steel – Damascus.
+                </p>
+            </div>
+            <div class="modal-window__column modal-window__column_wide">
+                <div class="slider">
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/catalog/knife3.png">
+                        <img class="slider__img slider__img_shadow slider__img_shadow_3" src="img/catalog/knife3_shadow.png">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/catalog/knife2.png">
+                        <img class="slider__img slider__img_shadow slider__img_shadow_2" src="img/catalog/knife2_shadow.png">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/catalog/knife1.png">
+                        <img class="slider__img slider__img_shadow slider__img_shadow_1" src="img/catalog/knife1_shadow.png">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/catalog/knife3.png">
+                        <img class="slider__img slider__img_shadow slider__img_shadow_3" src="img/catalog/knife3_shadow.png">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/catalog/knife2.png">
+                        <img class="slider__img slider__img_shadow slider__img_shadow_2" src="img/catalog/knife2_shadow.png">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/catalog/knife1.png">
+                        <img class="slider__img slider__img_shadow slider__img_shadow_1" src="img/catalog/knife1_shadow.png">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/catalog/knife3.png">
+                        <img class="slider__img slider__img_shadow slider__img_shadow_3" src="img/catalog/knife3_shadow.png">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/catalog/knife2.png">
+                        <img class="slider__img slider__img_shadow slider__img_shadow_2" src="img/catalog/knife2_shadow.png">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/catalog/knife1.png">
+                        <img class="slider__img slider__img_shadow slider__img_shadow_1" src="img/catalog/knife1_shadow.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="detail-window">
+            <div class="modal-window__column">
+                <img class="detail-window__cross" src="img/cross.png">
+                <img class="modal__img" src="img/knife_logo.png">
+                <h2 class="modal__heading">knife</h2>
+                <div class="_border"></div>
+                <p class="modal__text">
+                    Knives — handmade work made of Damascus steel, precious metals and other expensive materials. The handles of the knives, as well as the blade, are armourers' andmade, which makes the product exclusive itself.
+                </p>
+                <div class="_border"></div>
+                <p class="modal__text modal__text_brown">
+                    Material: Silver 925 ‘gold plating 999.9’, precious and semi—precious stones (diamonds, rubies, emeralds), steel – Damascus.
+                </p>
+            </div>
+            <div class="modal-window__column modal-window__column_wide">
+                <div class="detail-slider">
+                    <div class="detail-slider__item">
+                        <img class="detail-slider__img" src="img/catalog/knife_detail.png">
+                    </div>
+                    <div class="detail-slider__item">
+                        <img class="detail-slider__img" src="img/catalog/knife_detail.png">
+                    </div>
+                    <div class="detail-slider__item">
+                        <img class="detail-slider__img" src="img/catalog/knife_detail.png">
+                    </div>
+                    <div class="detail-slider__item">
+                        <img class="detail-slider__img" src="img/catalog/knife_detail.png">
+                    </div>
+                    <div class="detail-slider__item">
+                        <img class="detail-slider__img" src="img/catalog/knife_detail.png">
+                    </div>
+                    <div class="detail-slider__item">
+                        <img class="detail-slider__img" src="img/catalog/knife_detail.png">
+                    </div>
+                    <div class="detail-slider__item">
+                        <img class="detail-slider__img" src="img/catalog/knife_detail.png">
+                    </div>
+                    <div class="detail-slider__item">
+                        <img class="detail-slider__img" src="img/catalog/knife_detail.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container contacts">
+        <ul class="header">
+            <li class="header__item"><img class="header__logo" src="img/logo.png"></li>
+            <li class="header__item"><a class="header__link" href="#">about us</a></li>
+            <li class="header__item"><a class="header__link" href="#">products</a></li>
+            <li class="header__item"><a class="header__link header__link_active" href="#">contacts</a></li>
+            <li class="header__item"><a class="header__link" href="#">feedback</a></li>
+        </ul>
+        <div class="inner-container inner-container_contacts">
+            <h2 class="contacts__heading">lamar artworks, 2015</h2>
+            <div class="_border"></div>
+            <h3 class="contacts__phone">+971 52 744 25 47</h3>
+            <span class="contacts__text">e-mail: alexey@lamar-aw.com</span>
+            <img class="contacts__img" src="img/catalog/contacts_img.png">
+            <span class="contacts__text">Amenity Center,</span><br>
+            <span class="contacts__text">Towe 2, office 712,</span><br>
+            <span class="contacts__text contacts__text_last"> RAK, UAE</span><br>
+            <div class="_border"></div>
+        </div>
+        <a class="next-page" href="#"><img src="img/arrow_down.png"></a>
+    </div>
+    <div class="container feedback">
+        <ul class="header">
+            <li class="header__item"><img class="header__logo" src="img/logo.png"></li>
+            <li class="header__item"><a class="header__link" href="#">about us</a></li>
+            <li class="header__item"><a class="header__link" href="#">products</a></li>
+            <li class="header__item"><a class="header__link" href="#">contacts</a></li>
+            <li class="header__item"><a class="header__link header__link_active" href="#">feedback</a></li>
+        </ul>
+        <img class="feedback__img">
+        <p class="feedback__text">For any doubt or question don’t hesitate in filling up our form and we will contact youas soon as possible.</p>
+        <input type="text" class="feedback__input" placeholder="Enter your name"><br>
+        <input type="email" class="feedback__input" placeholder="Enter you e-mail"><br>
+        <textarea class="feedback__textarea" placeholder="Write your message here"></textarea><br>
+        <input type="submit" class="feedback__submit">
+    </div>
 </body>
 </html>

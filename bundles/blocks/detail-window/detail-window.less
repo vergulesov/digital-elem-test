@@ -1,0 +1,41 @@
+@bg : #141213;
+.detail-window {
+  background-color: @bg;
+  position: absolute;
+  height: calc(~"100vh - 80px");
+  width: 100%;
+  top: 80px;
+  display: flex;
+  z-index: -1;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+
+  opacity: 0;
+  &_active {
+    opacity: 1;
+    z-index: 2;
+  }
+  &__cross {
+    float: right;
+    margin-top: 5%;
+    cursor: pointer;
+    max-height: 28px;
+  }
+}
+.detail-slider {
+  height: 100%;
+  &__img {
+    max-width: 90%;
+    height: auto;
+    cursor: pointer;
+  }
+  &__item {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 12vh;
+  }
+}

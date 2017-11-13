@@ -4,6 +4,10 @@
 body {
   background-color: @bg-color;
   font-family: 'PT Sans', sans-serif;
+  overflow-y: hidden;
+}
+img, ul, li, span, button, div, input {
+  outline: none;
 }
 .main {
   //background-image: url("../img/main-background.png");
@@ -34,6 +38,9 @@ body {
     text-align: center;
     cursor: pointer;
     margin: 4vh 0;
+    &_about {
+      margin: 2vh auto;
+    }
     &:hover {
       color: white;
     }
@@ -55,6 +62,7 @@ body {
   position: absolute;
   top: 95%;
   left: 50%;
+  z-index: 1;
   transform: translate(-50%, -50%);
 }
 .background-img {

@@ -1,0 +1,52 @@
+@text-brown: #716256;
+.contacts {
+  background-color: rgba(13, 13, 17, 0.8);
+  &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: calc(~"100% - 80px");
+    z-index: 1;
+    opacity: 0.8;
+
+    background: url("../img/catalog/sword_contacts.png") no-repeat 100% 70%;
+    background-size: 22%;
+  }
+  &__heading {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+  }
+  &__text {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 22px;
+    letter-spacing: 3px;
+    margin-bottom: 2vh;
+    &_last {
+      margin-bottom: 5vh;
+    }
+  }
+  &__phone {
+    color: @text-brown;
+    font-size: 30px;
+    line-height: 22px;
+    letter-spacing: 3px;
+    margin-bottom: 2vh;
+    margin-top: 5vh;
+  }
+  &__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+}

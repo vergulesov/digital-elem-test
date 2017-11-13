@@ -1,0 +1,54 @@
+@border: #736458;
+.slider {
+  height: 100%;
+  &__item {
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__img {
+      max-width: 90%;
+      height: auto;
+      z-index: 4;
+    &:hover {
+      max-width: 92%;
+      cursor: pointer;
+
+      -webkit-transition-duration: 700ms;
+      -moz-transition-duration: 700ms;
+      -o-transition-duration: 700ms;
+      transition-duration: 700ms;
+    }
+    &_shadow {
+        position: absolute;
+        opacity: 0.6;
+        z-index: 0;
+      &_1{
+        top: 76%;
+        max-width: 70%;
+      }
+      &_2{
+        top: 76%;
+        max-width: 58%;
+        left: 27%;
+      }
+      &_3{
+        top: 33%;
+        left: -8%;
+        max-width: 90%;
+      }
+      }
+  }
+}
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+.slick-initialized .slick-list .slick-slide {
+  display: flex;
+}
+.slick-dots .slick-active {
+  background-color: @border;
+}
