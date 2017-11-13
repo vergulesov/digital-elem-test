@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     watch = require('gulp-watch');
 
 gulp.task('less', function(){
-    return gulp.src('bundles/**/*.less')
+    return gulp.src('bundles/styles.less')
         .pipe(less())
         .pipe(concat('styles.min.css'))
         .pipe(cssmin())

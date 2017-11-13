@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 <body>
-<!--<img class="background-img" src="img/main-background.png">-->
+<img class="background-img" src="img/main-background.png">
     <div class="container main">
         <div class="logo-container">
             <img src="img/logo.png" class="main__logo">
@@ -27,6 +27,7 @@
                 <li class="menu__item"><a class="menu__link href_feedback" href="#">feedback</a></li>
             </ul>
         </div>
+
         <div class="inner-container">
             <p class="main__promo">Premium class production absorbed the charm and the wisdom of the Eastern culture.</p>
             <div class="_border"></div>
@@ -37,11 +38,11 @@
     </div>
     <div class="container about">
         <ul class="header">
-            <li class="header__item"><img class="header__logo" src="img/logo.png"></li>
-            <li class="header__item"><a class="header__link header__link_active" href="#">about us</a></li>
-            <li class="header__item"><a class="header__link" href="#">products</a></li>
-            <li class="header__item"><a class="header__link" href="#">contacts</a></li>
-            <li class="header__item"><a class="header__link" href="#">feedback</a></li>
+            <li class="header__item"><img class="header__logo href_main" src="img/logo.png"></li>
+            <li class="header__item"><a class="header__link header__link_active href_about" href="#">about us</a></li>
+            <li class="header__item"><a class="header__link href_products" href="#">products</a></li>
+            <li class="header__item"><a class="header__link href_contacts" href="#">contacts</a></li>
+            <li class="header__item"><a class="header__link href_feedback" href="#">feedback</a></li>
         </ul>
         <div class="inner-container">
             <p class="main__promo">Premium class production absorbed the charm and the wisdom of the Eastern culture.</p>
@@ -65,11 +66,11 @@
     </div>
     <div class="container products">
         <ul class="header">
-            <li class="header__item"><img class="header__logo" src="img/logo.png"></li>
-            <li class="header__item"><a class="header__link" href="#">about us</a></li>
-            <li class="header__item"><a class="header__link header__link_active" href="#">products</a></li>
-            <li class="header__item"><a class="header__link" href="#">contacts</a></li>
-            <li class="header__item"><a class="header__link" href="#">feedback</a></li>
+            <li class="header__item"><img class="header__logo href_main" src="img/logo.png"></li>
+            <li class="header__item"><a class="header__link href_about" href="#">about us</a></li>
+            <li class="header__item"><a class="header__link header__link_active href_products" href="#">products</a></li>
+            <li class="header__item"><a class="header__link href_contacts" href="#">contacts</a></li>
+            <li class="header__item"><a class="header__link href_feedback" href="#">feedback</a></li>
         </ul>
         <div class="catalog">
             <div class="catalog__column">
@@ -189,40 +190,75 @@
             <div class="modal-window__column modal-window__column_wide">
                 <div class="slider">
                     <div class="slider__item">
+                        <div class="slider__img-container slider__img-container_main">
+                            <img class="slider__img" src="img/catalog/knife3.png">
+                            <div class="slider__img-container">
+                                <img class="slider__img slider__img_shadow slider__img_shadow_1" src="img/catalog/knife3_shadow.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__img-container slider__img-container_main">
+                            <img class="slider__img" src="img/catalog/knife2.png">
+                            <div class="slider__img-container">
+                                <img class="slider__img slider__img_shadow slider__img_shadow_2" src="img/catalog/knife2_shadow.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__img-container slider__img-container_main">
+                            <img class="slider__img" src="img/catalog/knife1.png">
+                            <div class="slider__img-container">
+                                <img class="slider__img slider__img_shadow slider__img_shadow_3" src="img/catalog/knife1_shadow.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__img-container slider__img-container_main">
+                            <img class="slider__img" src="img/catalog/knife3.png">
+                            <div class="slider__img-container">
+                                <img class="slider__img slider__img_shadow slider__img_shadow_1" src="img/catalog/knife3_shadow.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__img-container slider__img-container_main">
+                            <img class="slider__img" src="img/catalog/knife2.png">
+                            <div class="slider__img-container">
+                                <img class="slider__img slider__img_shadow slider__img_shadow_2" src="img/catalog/knife2_shadow.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__img-container slider__img-container_main">
+                            <img class="slider__img" src="img/catalog/knife1.png">
+                            <div class="slider__img-container">
+                                <img class="slider__img slider__img_shadow slider__img_shadow_3" src="img/catalog/knife1_shadow.png">
+                            </div>
+                        </div>
+                    </div><div class="slider__item">
+                    <div class="slider__img-container slider__img-container_main">
                         <img class="slider__img" src="img/catalog/knife3.png">
-                        <img class="slider__img slider__img_shadow slider__img_shadow_3" src="img/catalog/knife3_shadow.png">
+                        <div class="slider__img-container">
+                            <img class="slider__img slider__img_shadow slider__img_shadow_1" src="img/catalog/knife3_shadow.png">
+                        </div>
+                    </div>
+                </div>
+                    <div class="slider__item">
+                        <div class="slider__img-container slider__img-container_main">
+                            <img class="slider__img" src="img/catalog/knife2.png">
+                            <div class="slider__img-container">
+                                <img class="slider__img slider__img_shadow slider__img_shadow_2" src="img/catalog/knife2_shadow.png">
+                            </div>
+                        </div>
                     </div>
                     <div class="slider__item">
-                        <img class="slider__img" src="img/catalog/knife2.png">
-                        <img class="slider__img slider__img_shadow slider__img_shadow_2" src="img/catalog/knife2_shadow.png">
-                    </div>
-                    <div class="slider__item">
-                        <img class="slider__img" src="img/catalog/knife1.png">
-                        <img class="slider__img slider__img_shadow slider__img_shadow_1" src="img/catalog/knife1_shadow.png">
-                    </div>
-                    <div class="slider__item">
-                        <img class="slider__img" src="img/catalog/knife3.png">
-                        <img class="slider__img slider__img_shadow slider__img_shadow_3" src="img/catalog/knife3_shadow.png">
-                    </div>
-                    <div class="slider__item">
-                        <img class="slider__img" src="img/catalog/knife2.png">
-                        <img class="slider__img slider__img_shadow slider__img_shadow_2" src="img/catalog/knife2_shadow.png">
-                    </div>
-                    <div class="slider__item">
-                        <img class="slider__img" src="img/catalog/knife1.png">
-                        <img class="slider__img slider__img_shadow slider__img_shadow_1" src="img/catalog/knife1_shadow.png">
-                    </div>
-                    <div class="slider__item">
-                        <img class="slider__img" src="img/catalog/knife3.png">
-                        <img class="slider__img slider__img_shadow slider__img_shadow_3" src="img/catalog/knife3_shadow.png">
-                    </div>
-                    <div class="slider__item">
-                        <img class="slider__img" src="img/catalog/knife2.png">
-                        <img class="slider__img slider__img_shadow slider__img_shadow_2" src="img/catalog/knife2_shadow.png">
-                    </div>
-                    <div class="slider__item">
-                        <img class="slider__img" src="img/catalog/knife1.png">
-                        <img class="slider__img slider__img_shadow slider__img_shadow_1" src="img/catalog/knife1_shadow.png">
+                        <div class="slider__img-container slider__img-container_main">
+                            <img class="slider__img" src="img/catalog/knife1.png">
+                            <div class="slider__img-container">
+                                <img class="slider__img slider__img_shadow slider__img_shadow_3" src="img/catalog/knife1_shadow.png">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -273,11 +309,13 @@
     </div>
     <div class="container contacts">
         <ul class="header">
-            <li class="header__item"><img class="header__logo" src="img/logo.png"></li>
-            <li class="header__item"><a class="header__link" href="#">about us</a></li>
-            <li class="header__item"><a class="header__link" href="#">products</a></li>
-            <li class="header__item"><a class="header__link header__link_active" href="#">contacts</a></li>
-            <li class="header__item"><a class="header__link" href="#">feedback</a></li>
+            <li class="header__item"></li>
+            <li class="header__item"><img class="header__logo href_main" src="img/logo.png"></li>
+            <li class="header__item"><a class="header__link href_about" href="#">about us</a></li>
+            <li class="header__item"><a class="header__link href_products" href="#">products</a></li>
+            <li class="header__item"><a class="header__link header__link_active href_contacts" href="#">contacts</a></li>
+            <li class="header__item"><a class="header__link href_feedback" href="#">feedback</a></li>
+            <li class="header__item"></li>
         </ul>
         <div class="inner-container inner-container_contacts">
             <h2 class="contacts__heading">lamar artworks, 2015</h2>
@@ -294,11 +332,13 @@
     </div>
     <div class="container feedback">
         <ul class="header">
-            <li class="header__item"><img class="header__logo" src="img/logo.png"></li>
-            <li class="header__item"><a class="header__link" href="#">about us</a></li>
-            <li class="header__item"><a class="header__link" href="#">products</a></li>
-            <li class="header__item"><a class="header__link" href="#">contacts</a></li>
-            <li class="header__item"><a class="header__link header__link_active" href="#">feedback</a></li>
+            <li class="header__item"></li>
+            <li class="header__item"><img class="header__logo href_main" src="img/logo.png"></li>
+            <li class="header__item"><a class="header__link href_about" href="#">about us</a></li>
+            <li class="header__item"><a class="header__link href_products" href="#">products</a></li>
+            <li class="header__item"><a class="header__link href_contacts" href="#">contacts</a></li>
+            <li class="header__item"><a class="header__link header__link_active href_feedback" href="#">feedback</a></li>
+            <li class="header__item"></li>
         </ul>
         <div class="form-container form-container_form">
             <img class="form-container__img" src="img/knife_logo.png">

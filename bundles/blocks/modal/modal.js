@@ -21,13 +21,15 @@ $(function() {
             opacity : 0,
             zIndex: 0,
             left: '-4000px'
-        }, 350);
-        // setTimeout( modal.removeClass('modal-window_active'), 500);
+        }, 550);
     });
 
     var img = $('.slider__img');
     img.click(function () {
-        detail.addClass('detail-window_active');
+        detail.animate({
+            zIndex: 2,
+            opacity: 1
+        }, 200);
     });
 
 });

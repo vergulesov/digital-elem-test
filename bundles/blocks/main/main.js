@@ -70,6 +70,7 @@ $(function() {
         parralax();
     });
 
+    var header = $('.header');
     // события на колесо мыши
     $('.container').on('mousewheel', function(event) {
         var nextContainer = $(this).next();
@@ -89,6 +90,7 @@ $(function() {
                 scrollTop: prevContainer.offset().top
             }, 800);
             inverseParralax();
+
         }
     });
 

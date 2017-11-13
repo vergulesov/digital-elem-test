@@ -5,7 +5,7 @@ $(function() {
         slidesToShow: 3,
         slidesToScroll: 3,
         adaptiveHeight: true,
-        autoplay: true,
+        autoplay: false,
         arrows: 0,
         dots: true,
     });
